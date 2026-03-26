@@ -1,0 +1,66 @@
+Demoblaze Product Catalog
+========================================
+
+Page 1
+--------------------
+Name:  Samsung galaxy s6
+Price: $360
+Link:  https://www.demoblaze.com/prod.html?idp_=1
+
+Name:  Nokia lumia 1520
+Price: $820
+Link:  https://www.demoblaze.com/prod.html?idp_=2
+
+Name:  Nexus 6
+Price: $650
+Link:  https://www.demoblaze.com/prod.html?idp_=3
+
+Name:  Samsung galaxy s7
+Price: $800
+Link:  https://www.demoblaze.com/prod.html?idp_=4
+
+Name:  Iphone 6 32gb
+Price: $790
+Link:  https://www.demoblaze.com/prod.html?idp_=5
+
+Name:  Sony xperia z5
+Price: $320
+Link:  https://www.demoblaze.com/prod.html?idp_=6
+
+Name:  HTC One M9
+Price: $700
+Link:  https://www.demoblaze.com/prod.html?idp_=7
+
+Name:  Sony vaio i5
+Price: $790
+Link:  https://www.demoblaze.com/prod.html?idp_=8
+
+Name:  Sony vaio i7
+Price: $790
+Link:  https://www.demoblaze.com/prod.html?idp_=9
+
+Page 2
+--------------------
+Name:  Apple monitor 24
+Price: $400
+Link:  https://www.demoblaze.com/prod.html?idp_=10
+
+Name:  MacBook air
+Price: $700
+Link:  https://www.demoblaze.com/prod.html?idp_=11
+
+Name:  Dell i7 8gb
+Price: $700
+Link:  https://www.demoblaze.com/prod.html?idp_=12
+
+Name:  2017 Dell 15.6 Inch
+Price: $700
+Link:  https://www.demoblaze.com/prod.html?idp_=13
+
+Name:  ASUS Full HD
+Price: $230
+Link:  https://www.demoblaze.com/prod.html?idp_=14
+
+Name:  MacBook Pro
+Price: $1100
+Link:  https://www.demoblaze.com/prod.html?idp_=15
