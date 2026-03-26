@@ -1,6 +1,10 @@
 import { test, expect } from '../src/fixtures.js';
 
 test.describe('Part 2 - E2E Scenarios', () => {
+  test.beforeEach(async ({ cartPage }) => {
+    await cartPage.clearCart();
+  });
+
   test('should complete a product purchase', async ({ homePage, productPage, cartPage }) => {
     await homePage.goto();
     await homePage.openProduct('Samsung galaxy s6');
@@ -60,4 +64,5 @@ test.describe('Part 2 - E2E Scenarios', () => {
     await cartPage.deleteItem('Nokia lumia 1520');
     await expect(cartPage.items).toHaveCount(0);
   });
+
 });

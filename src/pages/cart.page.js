@@ -34,6 +34,17 @@ export class CartPage {
     await this.page.waitForTimeout(1000);
   }
 
+  async clearCart() {
+    await this.goto();
+    const count = await this.items.count();
+    if (count === 0) return;
+    const rows = await this.items.all();
+    for (const row of rows) {
+      await row.getByRole('link', { name: 'Delete' }).click();
+      await this.page.waitForTimeout(800);
+    }
+  }
+
   async placeOrder({ name, country, city, card, month, year }) {
     await this.placeOrderBtn.click();
     await this.page.locator('#orderModal').waitFor({ state: 'visible' });

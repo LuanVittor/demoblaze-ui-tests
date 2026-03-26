@@ -3,6 +3,7 @@ export class HomePage {
     this.page = page;
     this.productCards = page.locator('#tbodyid .card');
     this.nextButton = page.locator('#next2');
+    this.contactModal = page.locator('#exampleModal');
   }
 
   async goto() {
@@ -43,5 +44,18 @@ export class HomePage {
   async openProduct(name) {
     await this.page.locator('#tbodyid a.hrefch', { hasText: name }).click();
     await this.page.locator('.name').waitFor();
+  }
+
+  async openContactModal() {
+    await this.page.getByRole('link', { name: 'Contact' }).click();
+    await this.contactModal.waitFor({ state: 'visible' });
+  }
+
+  async submitContactForm({ email, name, message }) {
+    await this.page.locator('#recipient-email').fill(email);
+    await this.page.locator('#recipient-name').fill(name);
+    await this.page.locator('#message-text').fill(message);
+    this.page.once('dialog', (d) => d.accept());
+    await this.contactModal.getByRole('button', { name: 'Send message' }).click();
   }
 }
