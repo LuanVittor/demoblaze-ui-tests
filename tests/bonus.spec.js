@@ -1,13 +1,10 @@
 import { test, expect } from '../src/fixtures.js';
 
 // A timestamp suffix guarantees a unique username on every test run,
-// eliminating any risk of collision with other users on this shared demo site.
 const TEST_USER = { username: `uitestuser_${Date.now()}`, password: 'UITest@2026' };
 
 test.describe('Bonus - Login', () => {
   test.beforeAll(async ({ browser }) => {
-    // Register the unique user for this run. Because the username is always
-    // new, we are certain the account exists and the password is correct.
     const page = await browser.newPage();
     await page.goto('https://www.demoblaze.com');
 
@@ -40,8 +37,6 @@ test.describe('Bonus - Login', () => {
   });
 
   test('should show error when password is wrong for existing user', async ({ homePage, loginPage }) => {
-    // Because we registered TEST_USER in beforeAll, we know this username
-    // exists — so the error must be about the wrong password, not an unknown user.
     await homePage.goto();
     await loginPage.openLoginModal();
 
